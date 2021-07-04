@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: #ffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align:  center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+#imgbar {
+    width: 100%;
+    margin: 0;
+}
+article{
+    background-color: white;
+    margin: 30px 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+main article img {
+    width: 80%;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 12px;
+}
+.cuerpo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.precio, .descuento, .description{
+    margin: 10px 20px;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento {
+    font-size: 16px;
+    font-style: italic;
+    color: #39b54a;
+    
+}
+.cuerpo i {
+    font-size: 16px;
+    color: #39b54a;
+    border: solid 2px #39b54a;
+    background-color: #fff;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+}
+.description {
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+footer {
+    display: flex;
+    text-align: center;
+    margin: 30px 30px;
+    color: #666;
+}
+footer h3, p {
+    margin: 5px;
+}
+#termino{
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+footer div {
+    margin: 50px 0;
+}
+.icono {
+    color:#1259c3;
+    font-size: 2em;
+}
+@media (min-width:500px){
+    main section div.productos article {
+        width: 40%;
+        margin: 1%;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    main section div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    h2 {
+        margin: 12px 30px;
+    }
+}
+@media (min-width:750px){
+    .main-header-top-bar {
+        /*border: olive solid 5px;*/
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        /*border: olive solid 5px;*/
+        display:  flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display:  flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    main .titulo {
+        text-align: left;
+    }
+    .description {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    h2 {
+        margin: 12px 40px;
+    }
+}
+@media (min-width: 1200px){
+    .logo {
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main-navbar {
+        margin-top: 40px;
+    }
+    .main-navbar li {
+        margin:  0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    main section div.productos article {
+        width: 20%;
+    }
+    h2 {
+        margin: 12px 40px;
+    }
+}
+form {
+   border: solid 3px #666;
+   text-align: center;
+   margin: 2rem;
+   padding: 1rem;
+}
+input{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+main {
+    text-align: center;
+}
+@keyframes carrito {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+main section div.productos article:hover {
+    box-shadow: 0px 0px 10px #0022aa;
+}
+main section div.productos article:hover i {
+    animation: carrito 2s;
+}
+
+
